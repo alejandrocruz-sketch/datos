@@ -7,7 +7,7 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-    darkMode: true,
+    darkMode: 'media',
     theme: {
         extend: {
             fontFamily: {
@@ -19,6 +19,7 @@ module.exports = {
     variants: {
         extend: {
             opacity: ['disabled'],
+            textOpacity: ['dark']
         },
     },
 
