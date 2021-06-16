@@ -12,19 +12,19 @@
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal text-center">
                                 <th>#</th>
-                                <th>ID_FACTURA</th>
-                                <th>ID CLIENTE</th>
-                                <th>TOTAL FACTURA</th>
-                                <th>FECHA FACTURA</th>
-                                <th>ID ALMACEN</th>
+                                <th>ID<br> FACTURA</th>
+                                <th>ID<br> CLIENTE</th>
+                                <th>TOTAL<br> FACTURA</th>
+                                <th>FECHA<br>FACTURA</th>
+                                <th>ID<br> ALMACEN</th>
                                 <th>USUARIO</th>
-                                <th>FECHA CREACIÓN</th>
-                                <th>NUMERO FACTURA</th>
-                                <th>NUMERO BOLETAS</th>
-                                <th>TOTAL FACTURADO</th>
+                                <th>FECHA<br> CREACIÓN</th>
+                                <th>NUMERO<br> FACTURA</th>
+                                <th>NUMERO<br> BOLETAS</th>
+                                <th>TOTAL<br> FACTURADO</th>
                                 <th>ALMACEN</th>
-                                <th>MEDIO PAGO</th>
-                                <th>TIPO ENTRADA</th>
+                                <th>MEDIO<br> PAGO</th>
+                                <th>TIPO <br> ENTRADA</th>
                             </tr>
                         </thead>
                         <tbody class="text-gray-700 text-sm">
