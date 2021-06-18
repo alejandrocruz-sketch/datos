@@ -26,12 +26,29 @@
                     <div class="flex space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                         {{-- <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Inicio</a> --}}
-                        <a href="{{ route('dashboard') }}" :bg-gray-900 text-white="request()->routeIs('datos.2017')" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">INICIO</a>
-                        <a href="{{ route('datos.2017') }}" :bg-gray-900 text-white="request()->routeIs('datos.2017')" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">2017</a>
-                        <a href="{{ route('datos.2018') }}" :bg-gray-900 text-white="request()->routeIs('datos.2018')" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">2018</a>
-                        <a href="{{ route('datos.2019') }}" :bg-gray-900 text-white="request()->routeIs('datos.2019')" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">2019</a>
-                        <a href="{{ route('datos.2020') }}" :bg-gray-900 text-white="request()->routeIs('datos.2020')" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">2020</a>
-                        <a href="{{ route('datos.2021') }}" :bg-gray-900 text-white="request()->routeIs('datos.2021')" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">2021</a>
+                        <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                            {{ __('INICIO') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('datos.2017') }}" :active="request()->routeIs('datos.2017')">
+                            {{ __('2017') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('datos.2018') }}" :active="request()->routeIs('datos.2018')">
+                            {{ __('2018') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('datos.2019') }}" :active="request()->routeIs('datos.2019')">
+                            {{ __('2019') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('datos.2020') }}" :active="request()->routeIs('datos.2020')">
+                            {{ __('2020') }}
+                        </x-nav-link>
+
+                        <x-nav-link href="{{ route('datos.2021') }}" :active="request()->routeIs('datos.2021')">
+                            {{ __('2021') }}
+                        </x-nav-link>
                     </div>
                 </div>
             </div>
