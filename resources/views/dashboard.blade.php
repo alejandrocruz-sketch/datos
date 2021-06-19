@@ -6,8 +6,8 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 sm:px-6 lg:px-8">
-            <div class="d-block bg-white overflow-hidden shadow-xl col-span-1 sm:col-span-2 sm:rounded-lg dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 gap-3 md:gap-4 md:grid-cols-2 sm:px-6 lg:px-8">
+            <div class="d-block bg-white overflow-hidden shadow-xl col-span-1 md:col-span-2 sm:rounded-lg dark:bg-gray-800">
                 {{-- <x-jet-welcome /> --}}
                 <div class="overflow-x-auto">
                     <div class="min-w-screen flex items-center justify-center font-sans overflow-hidden">
@@ -15,17 +15,17 @@
                             <div class="bg-white shadow-md rounded my-6">
                                 <table class="min-w-max w-full table-auto">
                                     <thead>
-                                        <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal text-center">
+                                        <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal text-center dark:bg-gray-900 dark:text-white">
                                             <th>AÑO</th>
-                                            <th>TOTAL FACTURAS</th>
-                                            <th>TOTAL CLIENTES</th>
-                                            <th>TICKET POR CLIENTE</th>
-                                            <th>TOTAL DE PRECIO</th>
-                                            <th>TICKET POR FACTURA</th>
+                                            <th>TOTAL <br>FACTURAS</th>
+                                            <th>TOTAL <br>CLIENTES</th>
+                                            <th>TICKET <br>POR CLIENTE</th>
+                                            <th>TOTAL <br>DE PRECIO</th>
+                                            <th>TICKET POR <br>FACTURA</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-gray-700 text-sm">
-                                        <tr class="border-b border-gray-200 hover:bg-gray-100 text-center">
+                                        <tr class="border-b border-gray-200 text-center dark:bg-gray-700 dark:text-white dark:border-gray-600">
                                             <th>2017</th>
                                             <td>7404</td>
                                             <td>4066</td>
@@ -33,7 +33,7 @@
                                             <td>1181091502</td>
                                             <td>159520,7323</td>
                                         </tr>                                        
-                                        <tr class="border-b border-gray-200 hover:bg-gray-100 text-center">
+                                        <tr class="border-b border-gray-200 text-center dark:bg-gray-700 dark:text-white dark:border-gray-600">
                                             <th>2018</th>
                                             <td>33934</td>
                                             <td>12426</td>
@@ -41,7 +41,7 @@
                                             <td>3013795828</td>
                                             <td>88813,45636</td>
                                         </tr>                                        
-                                        <tr class="border-b border-gray-200 hover:bg-gray-100 text-center">
+                                        <tr class="border-b border-gray-200 text-center dark:bg-gray-700 dark:text-white dark:border-gray-600">
                                             <th>2019</th>
                                             <td>60183</td>
                                             <td>19589</td>
@@ -49,7 +49,7 @@
                                             <td>6411255298</td>
                                             <td>106529,3405</td>
                                         </tr>                                        
-                                        <tr class="border-b border-gray-200 hover:bg-gray-100 text-center">
+                                        <tr class="border-b border-gray-200 text-center dark:bg-gray-700 dark:text-white dark:border-gray-600">
                                             <th>2020</th>
                                             <td>15260</td>
                                             <td>3826</td>
@@ -57,7 +57,7 @@
                                             <td>1748029225</td>
                                             <td>114549,7526</td>
                                         </tr>                                        
-                                        <tr class="border-b border-gray-200 hover:bg-gray-100 text-center">
+                                        <tr class="border-b border-gray-200 text-center dark:bg-gray-700 dark:text-white dark:border-gray-600">
                                             <th>2021</th>
                                             <td>214</td>
                                             <td>108</td>
@@ -199,7 +199,7 @@
                     });
                     </script>
             </div>
-            <div class="d-block p-5 bg-white overflow-hidden shadow-xl col-span-1 sm:col-span-2 sm:rounded-lg dark:bg-gray-800">
+            <div class="d-block p-5 bg-white overflow-hidden shadow-xl col-span-1 md:col-span-2 md:rounded-lg dark:bg-gray-800">
                 <canvas id="myChart4" height="100"></canvas>
                 <script>
                     var ctx = document.getElementById('myChart4');

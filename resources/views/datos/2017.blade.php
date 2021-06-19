@@ -10,7 +10,7 @@
                 <div class="bg-white shadow-md rounded my-6">
                     <table class="min-w-max w-full table-auto">
                         <thead>
-                            <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal text-center">
+                            <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal text-center dark:bg-gray-900 dark:text-white">
                                 <th>#</th>
                                 <th>ID<br> FACTURA</th>
                                 <th>ID<br> CLIENTE</th>
@@ -29,7 +29,7 @@
                         </thead>
                         <tbody class="text-gray-700 text-sm">
                             @foreach ($datos_2017 as $dato_2017)
-                            <tr class="border-b border-gray-200 hover:bg-gray-100 text-center">
+                            <tr class="border-b border-gray-200 text-center dark:bg-gray-700 dark:text-white dark:border-gray-600">
                                 <td>{{$dato_2017->id}}</td>
                                 <td>{{$dato_2017->id_factura}}</td>
                                 <td>{{$dato_2017->id_cliente}}</td>
