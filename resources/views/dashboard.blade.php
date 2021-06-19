@@ -6,8 +6,8 @@
     </x-slot>
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 sm:px-6 lg:px-8">
+            <div class="d-block bg-white overflow-hidden shadow-xl col-span-1 sm:col-span-2 sm:rounded-lg dark:bg-gray-800">
                 {{-- <x-jet-welcome /> --}}
                 <div class="overflow-x-auto">
                     <div class="min-w-screen flex items-center justify-center font-sans overflow-hidden">
@@ -68,7 +68,169 @@
                                     </tbody>
                                 </table>
                             </div>
-            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block p-5 bg-white overflow-hidden shadow-xl sm:rounded-lg dark:bg-gray-800">
+                <canvas id="myChart" height="100"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['2017', '2018', '2019', '2020', '2021'],
+                            datasets: [{
+                                label: '# Total de Facturas',
+                                data: [7404, 33934, 60183, 15260, 214],
+                                fill: true,
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)'
+                                ],
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                    </script>
+            </div>
+            <div class="d-block p-5 bg-white overflow-hidden shadow-xl sm:rounded-lg dark:bg-gray-800">
+                <canvas id="myChart1" height="100"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart1');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['2017', '2018', '2019', '2020', '2021'],
+                            datasets: [{
+                                label: '# Total de Clientes',
+                                data: [4066, 12426, 19589, 3826, 108],
+                                fill: true,
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                    </script>
+            </div>
+            <div class="d-block p-5 bg-white overflow-hidden shadow-xl sm:rounded-lg dark:bg-gray-800">
+                <canvas id="myChart2" height="100"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart2');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['2017', '2018', '2019', '2020', '2021'],
+                            datasets: [{
+                                label: 'Ticket por Cliente',
+                                data: [1.820954255, 2.73088685, 3.072285466, 3.988499739, 1.981481481],
+                                fill: true,
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                    </script>
+            </div>
+            <div class="d-block p-5 bg-white overflow-hidden shadow-xl sm:rounded-lg dark:bg-gray-800">
+                <canvas id="myChart3" height="100"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart3');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['2017', '2018', '2019', '2020', '2021'],
+                            datasets: [{
+                                label: 'Total Precio',
+                                data: [1181091502, 3013795828, 6411255298, 1748029225, 18198950],
+                                fill: true,
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                    </script>
+            </div>
+            <div class="d-block p-5 bg-white overflow-hidden shadow-xl col-span-1 sm:col-span-2 sm:rounded-lg dark:bg-gray-800">
+                <canvas id="myChart4" height="100"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChart4');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['2017', '2018', '2019', '2020', '2021'],
+                            datasets: [{
+                                label: 'Ticket por Factura',
+                                data: [159520.7323, 88813.45636, 106529.3405, 114549.7526, 85041.82243],
+                                fill: true,
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                    </script>
             </div>
         </div>
     </div>
